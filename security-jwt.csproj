@@ -2,6 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
+      <PackageVersion>0.1.1</PackageVersion>
+      <PackageId>calisario-security-jwt</PackageId>
   </PropertyGroup>
 
 </Project>

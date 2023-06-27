@@ -40,7 +40,7 @@ public class JwtService : IJwtService
 
         var trueSignature = this.getSignature(header, payload);
         
-        if(signature.Equals(trueSignature))
+        if(!signature.Equals(trueSignature))
             throw new ArgumentException("Invalid JWT Signature\nCorrect: " + trueSignature + "\nInput:" + signature);
 
         var jsonString = this.base64ToJson(payload);
